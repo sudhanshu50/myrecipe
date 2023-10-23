@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+.backBtn {
+  position: absolute;
+  left: 5%;
+  border: 2px solid rgb(7, 0, 14) !important;
+  width: 2%;
+}
+
+.box1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 3%;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgba(214, 198, 206, 0.8);
+  padding: 2%;
+  border-radius: 2%;
+  width: 70%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.head {
+  color: black;
+  font-family: cursive !important;
+  text-align: center;
+  margin-bottom: 3% !important;
+}
+
+.recipeBox {
+  border-radius: 10% !important;
+  background-color: beige !important;
+  width: 18rem !important;
+  margin-top: 1.2rem;
+}
+
+.recipeImg {
+  border-radius: 5%;
+}
+
+.msg {
+  color: red;
+  font-size: 2rem !important;
+  text-align: center;
+}
+
+.brief {
+  text-decoration: none;
+  margin-right: 2%;
+}
+
+.box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 3%;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  background-color: rgba(214, 198, 206, 0.8);
+  padding: 2%;
+  border-radius: 2%;
+  width: 70%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.msg {
+  color: red;
+  font-size: 2rem !important;
+  text-align: center;
+}
+
+a {
+  text-transform: uppercase;
+  color: blue;
+}
