@@ -39,7 +39,7 @@ const SearchPage = memo(() => {
         .then((res) => res.json())
         .then((output) => setRecipes(output.hits))
         .catch((error) => {
-          console.error("Error fetching data:", error);
+          console.log("Error fetching data:", error);
         });
     }
   }, [query]);
