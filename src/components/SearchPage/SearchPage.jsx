@@ -27,14 +27,15 @@ const SearchPage = memo(() => {
     if (query.trim() === "") {
       // Fetch default recipes (e.g., "pizza") when the query is empty
       fetch(
-        `${USER_API_ENDPOINT}?q=tea&app_id=${APP_ID}&app_key=${API_KEY}&from=0&to=12`
+        // `${USER_API_ENDPOINT}?q=tea&app_id=${APP_ID}&app_key=${API_KEY}&from=0&to=12`
+        "https://api.edamam.com/search?q=chicken&app_id=31c4a990&app_key=c06dc70f1871ff781648d6cc1cf33f12&from=0&to=3"
       )
         .then((res) => res.json())
         .then((output) => setRecipes(output.hits));
     } else {
       // Fetch recipes based on the user's query
       fetch(
-        `${USER_API_ENDPOINT}?q=${query}&app_id=${APP_ID}&app_key=${API_KEY}&from=0&to=10`
+        `https://api.edamam.com/search?q=${query}&app_id=31c4a990&app_key=c06dc70f1871ff781648d6cc1cf33f12&from=0&to=10`
       )
         .then((res) => res.json())
         .then((output) => setRecipes(output.hits))
