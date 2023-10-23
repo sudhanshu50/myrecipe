@@ -35,7 +35,7 @@ const SearchPage = memo(() => {
     } else {
       // Fetch recipes based on the user's query
       fetch(
-        `https://api.edamam.com/search?q=${query}&app_id=31c4a990&app_key=c06dc70f1871ff781648d6cc1cf33f12&from=0&to=10`
+        `https://api.edamam.com/search?q=${query}&app_id=31c4a990&app_key=c06dc70f1871ff781648d6cc1cf33f12&from=0&to=12`
       )
         .then((res) => res.json())
         .then((output) => setRecipes(output.hits))
@@ -111,7 +111,7 @@ const SearchPage = memo(() => {
                 <Card
                   className={styles.rBox}
                   key={index}
-                  style={{ width: "18rem" }}
+                  style={{ width: "18rem", height: "25rem" }}
                 >
                   <Card.Img
                     className={styles.recipeImg}
@@ -186,9 +186,9 @@ const SearchPage = memo(() => {
                   <ol style={{ display: "inline-block" }}>
                     <span>Ingredients:</span>
                     {selectedRecipe &&
-                      selectedRecipe.ingredientLines.map((item, i) => (
-                        <li key={i}>{item}</li>
-                      ))}
+                      selectedRecipe.ingredientLines
+                        .slice(0, 10)
+                        .map((item, i) => <li key={i}>{item}</li>)}
                   </ol>
                 </>
               )}

@@ -9,7 +9,7 @@ const NavBar = () => {
     <>
       <Navbar bg="primary" data-bs-theme="dark" style={{position:"sticky", top:"0px", zIndex:"1"}}>
         <Container>
-          <Navbar.Brand href="#home" style={{padding:"0px"}}>
+          <Navbar.Brand href="#" style={{padding:"0px"}}>
             <img
               width="40"
               height="40"
