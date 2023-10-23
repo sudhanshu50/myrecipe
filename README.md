@@ -57,3 +57,10 @@ To get a copy of this project up and running on your local machine, follow these
 1. React: A JavaScript library for building user interfaces.
 2. Material-UI: A popular React UI framework.
 3. React Bootstrap: A library for using Bootstrap components in React applications.
+
+## Screenshots
+<img src="./img/sshot1.png"/>
+<img src="./img/sshot2.png"/>
+<img src="./img/sshot3.png"/>
+<img src="./img/sshot4.png"/>
+<img src="./img/sshot5.png"/>
